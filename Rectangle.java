@@ -5,3 +5,11 @@ class Rectangle extends Shape {
     double length, width;
     // Constructor
     Rectangle() { super("Rectangle"); }
+    // Overriding the getInput method
+    void getInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        length = sc.nextDouble();
+        System.out.print("Enter width: ");
+        width = sc.nextDouble();
+    }
