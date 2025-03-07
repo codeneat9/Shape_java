@@ -32,3 +32,13 @@ public class Main {
                 case 0 -> System.out.println("Exiting...");
                 default -> System.out.println("Invalid choice!");
             }
+            // If the user has chosen a shape
+            if (shape != null) {
+                // Call the correct getInput method for each shape
+                if (shape instanceof Circle) ((Circle) shape).getInput();
+                else if (shape instanceof Rectangle) ((Rectangle) shape).getInput();
+                else if (shape instanceof Square) ((Square) shape).getInput();
+                else if (shape instanceof Sphere) ((Sphere) shape).getInput();
+                else if (shape instanceof Cylinder) ((Cylinder) shape).getInput();
+                else if (shape instanceof EquilateralPyramid) ((EquilateralPyramid) shape).getInput();
+
