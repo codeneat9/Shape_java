@@ -22,3 +22,13 @@ public class Main {
             choice = sc.nextInt();
             // Declare a Shape object
             Shape shape = null;
+            switch (choice) {
+                case 1 -> shape = new Circle();
+                case 2 -> shape = new Rectangle();
+                case 3 -> shape = new Square();
+                case 4 -> shape = new Sphere();
+                case 5 -> shape = new Cylinder();
+                case 6 -> shape = new EquilateralPyramid();
+                case 0 -> System.out.println("Exiting...");
+                default -> System.out.println("Invalid choice!");
+            }
