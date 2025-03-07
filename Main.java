@@ -51,3 +51,9 @@ public class Main {
                     ((Volume) shape).calculateVolume();
                 }
             }
+            // If the user has chosen to exit
+        } while (choice != 0);
+        
+        sc.close();
+    }
+}
