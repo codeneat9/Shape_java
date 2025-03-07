@@ -13,3 +13,8 @@ class Cylinder extends Shape implements Volume {
         System.out.print("Enter height: ");
         height = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Surface Area: " + (2 * Math.PI * radius * (radius + height))); }
+    void calculatePerimeter() { System.out.println("Cylinder has no perimeter."); }
+    public void calculateVolume() { System.out.println("Volume: " + (Math.PI * radius * radius * height)); }
+}
