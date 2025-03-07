@@ -13,3 +13,7 @@ class Rectangle extends Shape {
         System.out.print("Enter width: ");
         width = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Area: " + (length * width)); }
+    void calculatePerimeter() { System.out.println("Perimeter: " + (2 * (length + width))); }
+}
