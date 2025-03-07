@@ -5,3 +5,9 @@ class Sphere extends Shape implements Volume {
     double radius;
     // Constructor
     Sphere() { super("Sphere"); }
+    // Overriding the getInput method 
+    void getInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        radius = sc.nextDouble();
+    }
