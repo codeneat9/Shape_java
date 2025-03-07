@@ -11,3 +11,8 @@ class Sphere extends Shape implements Volume {
         System.out.print("Enter radius: ");
         radius = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Surface Area: " + (4 * Math.PI * radius * radius)); }
+    void calculatePerimeter() { System.out.println("Sphere has no perimeter."); }
+    public void calculateVolume() { System.out.println("Volume: " + ((4.0 / 3) * Math.PI * Math.pow(radius, 3))); }
+}
