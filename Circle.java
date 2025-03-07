@@ -11,3 +11,7 @@ class Circle extends Shape {
         System.out.print("Enter radius: ");
         radius = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Area: " + (Math.PI * radius * radius)); }
+    void calculatePerimeter() { System.out.println("Perimeter: " + (2 * Math.PI * radius)); }
+}
