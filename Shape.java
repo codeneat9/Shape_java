@@ -5,3 +5,7 @@ abstract class Shape {
     Shape(String name) {
         this.shapeName = name;
     }
+     // Abstract methods
+    abstract void calculateArea();
+    abstract void calculatePerimeter();
+}
