@@ -46,3 +46,8 @@ public class Main {
                 shape.calculateArea();
                 shape.calculatePerimeter();
 
+                // Check if the shape also implements Volume
+                if (shape instanceof Volume) {
+                    ((Volume) shape).calculateVolume();
+                }
+            }
