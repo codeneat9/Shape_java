@@ -42,3 +42,7 @@ public class Main {
                 else if (shape instanceof Cylinder) ((Cylinder) shape).getInput();
                 else if (shape instanceof EquilateralPyramid) ((EquilateralPyramid) shape).getInput();
 
+                // Calculate and display the results
+                shape.calculateArea();
+                shape.calculatePerimeter();
+
