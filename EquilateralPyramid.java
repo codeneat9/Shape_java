@@ -13,3 +13,8 @@ class EquilateralPyramid extends Shape implements Volume {
         System.out.print("Enter height: ");
         height = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Surface Area: " + ((base * base) + (2 * base * Math.sqrt((base / 2) * (base / 2) + height * height)))); }
+    void calculatePerimeter() { System.out.println("Perimeter: " + (4 * base)); }
+    public void calculateVolume() { System.out.println("Volume: " + ((1.0 / 3) * base * base * height)); }
+}
