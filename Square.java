@@ -11,3 +11,7 @@ class Square extends Shape {
         System.out.print("Enter side: ");
         side = sc.nextDouble();
     }
+    // Overriding the calculateArea and calculatePerimeter methods
+    void calculateArea() { System.out.println("Area: " + (side * side)); }
+    void calculatePerimeter() { System.out.println("Perimeter: " + (4 * side)); }
+}
